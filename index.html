@@ -1,34 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-    body {
-      width: 100%;
-      overflow-x: hidden;
-      overflow-y: auto;
-      background-color: #f0f0f0;
-    }
-  </style>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bob's test web</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  .с1 {
+    position: relative;
+  }
+
+  .b1 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4b0082;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.4s ease, transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 160px;
+    left: 250px;
+    z-index: 10;
+  }
+
+  .b1:hover {
+    background-color: #180086;
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.9);
+  }
+
+  .b2 {
+    display: inline-block;
+    
+    background-color: #4b0082;
+    text-decoration: none;
+    transition: background-color 0.4s ease, transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 280px;
+    left: 250px;
+    z-index: 10;
+    border-radius: 50%;
+    border: 7px solid #4b0082;
+  }
+
+  .b2 img {
+    width: 130px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%
+  }
+
+  .b2:hover {
+    background-color: #180086;
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.9);
+  }
+
+  .b2-1 {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4b0082;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 20;
+}
+
+  .b3 {
+    display: inline-block;
+    
+    background-color: #4b0082;
+    text-decoration: none;
+    transition: background-color 0.4s ease, transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 540px;
+    left: 250px;
+    z-index: 10;
+    border-radius: 50%;
+    border: 7px solid #4b0082;
+  }
+
+  .b3 img {
+    width: 130px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%
+  }
+
+  .b3:hover {
+    background-color: #180086;
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.9);
+  }
+
+  .b3-1 {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4b0082;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 20;
+}
+
+  .b4 {
+    display: inline-block;
+    
+    background-color: #4b0082;
+    text-decoration: none;
+    transition: background-color 0.4s ease, transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 800px;
+    left: 250px;
+    z-index: 10;
+    border-radius: 50%;
+    border: 7px solid #4b0082;
+  }
+
+  .b4 img {
+    width: 130px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%
+  }
+
+  .b4:hover {
+    background-color: #180086;
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.9);
+  }
+
+  .b4-1 {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4b0082;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 20;
+}
+
+</style>
+
 </head>
-<body style="width: 100%; background: linear-gradient(to right, #D29CFF, #E5E2E7);">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <h1 style="text-align: center; color: indigo; font-family: Tangerine; font-size: 43px;">Not all those who wander are lost</h1>
-  <img src="https://i.pinimg.com/originals/ad/f2/41/adf241461e77a80a9c05ce99f89652c9.jpg" alt="Здесь должна была быть картинка, но она не загрузилась..." style="height: 100vh; width: auto; display: block; margin: 0 auto;">
-  <p style="text-align: center; color: black; font-family: Arial; font-size: 8px;">Это тест моего сайта.</p>
+<body style="background: linear-gradient(to right, #D29CFF, #E5E2E7);">
+  <h1 style="text-align: center; color: #4b0082; font-family: Tangerine; font-size: 43px;">Not all those who wander are lost</h1>
+
+  <a href="https://docs.google.com/presentation/d/e/2PACX-1vTTmES4zaxrUQbDMLHvkoha9BUxfgVbU6JbeaN15n-0-Gvx5_7V5oTnrGybeHinRg/pub?start=false&loop=false&delayms=3000" class="b1">
+    Portfolio
+  </a>
+
+    <a href="https://www.facebook.com/profile.php?id=100082220299710" class="b2">
+      <img src="https://github.com/Bob-13/oficial-website/blob/main/img/ChatGPT%20Image%20Jan%2030,%202026,%2001_37_18%20PM.png?raw=true" alt="Фейсбук">
+      <span class="b2-1">Facebook</span>
+    </a>
+
+    <a href="https://www.instagram.com/vladimirvaskovskyi/" class="b3">
+      <img src="https://github.com/Bob-13/oficial-website/blob/main/img/ChatGPT%20Image%20Jan%2030,%202026,%2005_24_53%20PM.png?raw=true" alt="Инстаграмм">
+      <span class="b3-1">Instagram</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/volodymyr-vaskovskyi/" class="b4">
+      <img src="https://github.com/Bob-13/oficial-website/blob/main/img/1769794390154.jpg?raw=true" alt="Инстаграмм">
+      <span class="b4-1">Linkedin</span>
+    </a>
+
+  <img src="https://github.com/Bob-13/oficial-website/blob/main/img/ChatGPT%20Image%20Jan%2030,%202026,%2001_36_32%20PM.png?raw=true" alt="Здесь должна была быть картинка, но она не загрузилась..." style="height: 110vh; width: auto; display: block; margin: 0 auto;">
+  <p  style="text-align: center; color: black; font-family: Arial; font-size: 8px;">Это тест моего сайта.</p>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
