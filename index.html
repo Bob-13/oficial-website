@@ -229,6 +229,59 @@
     font-size: 1vh;
   }
 
+  .d1 {
+    position: fixed;
+    top: 2.5vh;
+    right: 2.5vh;
+    z-index: 100;
+  }
+
+  .d1 summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .d1 summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5vh;
+    height: 5vh;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .d1 summary::before,
+  .d1 summary::after,
+  .d1 summary div {
+    content: '';
+    display: block;
+    height: 1vh;
+    background-color: #4b0082;
+    border-radius: 0.5vh;
+  }
+
+  .d1 summary div {
+    margin: 0;
+  }
+
+  .d1[open] summary::before {
+    transform: rotate(45deg) translate(1vh, 1vh);
+  }
+
+  .d1[open] summary div {
+    opacity: 0;
+  }
+
+  .d1[open] summary::after {
+    transform: rotate(-45deg) translate(1vh, -1vh);
+  }
+
+  summary::before,
+  summary::after,
+  summary div {
+    transition: 0.3s;
+  }
+
 </style>
 
 </head>
@@ -255,6 +308,18 @@
     </a>
 
   <img src="https://github.com/Bob-13/oficial-website/blob/main/img/ChatGPT%20Image%20Jan%2030,%202026,%2001_36_32%20PM.png?raw=true" class="c1" alt="Здесь должна была быть картинка, но она не загрузилась...">
+
+<details class="d1">
+  <summary>
+    <div></div>
+  </summary>
+  <ul>
+    <li>Page 1</li>
+    <li>Page 2</li>
+    <li>Page 3</li>
+  </ul>
+</details>
+
   <p  class="c3">Это тест моего сайта.</p>
 </body>
 </html>
