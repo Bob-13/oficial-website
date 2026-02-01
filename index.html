@@ -265,7 +265,7 @@
   }
 
   .d1[open] summary::before {
-    transform: rotate(45deg) translate(1vh, 1vh);
+    transform: rotate(45deg) translate(0vh, 0vh);
   }
 
   .d1[open] summary div {
@@ -273,13 +273,40 @@
   }
 
   .d1[open] summary::after {
-    transform: rotate(-45deg) translate(1vh, -1vh);
+    transform: rotate(-45deg) translate(0vh, 0vh);
   }
 
   summary::before,
   summary::after,
   summary div {
-    transition: 0.3s;
+    transition: 0.5s;
+  }
+
+  .d1 > ul {
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+  }
+
+  .d2 {
+    color: #FFFFFF;
+    background-color: #18008630;
+    width: 20vw;
+    height: 100vh;
+    padding-top: 3vh;
+  }
+
+  .d2 li {
+    margin-top: 2vh;
+  }
+
+  li {
+    text-decoration: none;
+  }
+
+  .d2 a {
+    text-decoration: none;
+    color: #FFFFFF;
   }
 
 </style>
@@ -313,10 +340,10 @@
   <summary>
     <div></div>
   </summary>
-  <ul>
-    <li>Page 1</li>
-    <li>Page 2</li>
-    <li>Page 3</li>
+  <ul Class="d2">
+    <li><a href="https://bob-13.github.io/oficial-website/page1.html">Fantasy stories</a></li>
+    <li><a href="https://bob-13.github.io/oficial-website/page1.html">Old tales</a></li>
+    <li><a href="https://bob-13.github.io/oficial-website/page1.html">Random nonsense</a></li>
   </ul>
 </details>
 
