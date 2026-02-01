@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>this is not the page you're looking for</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background-image: url("https://github.com/Bob-13/oficial-website/blob/main/img/databank_jedimindtrick_01_169_a491266d.jpeg?raw=true");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .overlay {
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); /* затемнение для читаемости текста */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: #4b0082;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #180086;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+    <h1>This is not the page you're looking for...</h1>
+<a href="https://bob-13.github.io/oficial-website/" class="btn">
+  Click here
+</a>
+  </div>
+
+</body>
+</html>
