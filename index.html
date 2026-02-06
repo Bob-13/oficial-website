@@ -353,7 +353,7 @@
     </a>
 
   <div class="c1">
-    <img id="slider" src="https://github.com/Bob-13/oficial-website/blob/main/img/ChatGPT%20Image%20Jan%2030,%202026,%2001_36_32%20PM.png?raw=true" alt="Здесь должна была быть картинка, но она не загрузилась...">
+    <img id="slider" src="https://github.com/Bob-13/oficial-website/blob/main/img/ChatGPT%20Image%20Feb%206,%202026,%2010_14_28%20PM.png?raw=true" alt="Здесь должна была быть картинка, но она не загрузилась...">
   </div>
 
   <details class="d1">
@@ -384,8 +384,11 @@ function showImage() {
   e3.style.opacity = 0;
 
   setTimeout(() => {
-    e3.src = e1[e2];
-    e3.style.opacity = 1;
+    e3.onload = () => {
+      e3.style.opacity = 1;
+      };
+
+    e3.src = e1[e2]; 
   }, 600);
 }
 
@@ -402,9 +405,8 @@ function prev() {
 setInterval(() => {
   e2 = (e2 + 1) % e1.length;
   showImage();
-}, 5000);
+}, 8000);
 </script>
 
 </body>
 </html>
-
