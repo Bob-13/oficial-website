@@ -195,7 +195,9 @@
   .c1 {
     height: 100vh;
     overflow: hidden;
-    position: relative; 
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.6s ease, transform 0.6s ease;
   }
 
   .c1 img {
@@ -219,6 +221,10 @@
     color: #4b0082;
     font-family: Tangerine;
     font-size: 43px;
+    text-shadow:
+      0 0 5px white,
+      0 0 10px white,
+      0 0 20px white;
   }
 
   .c3 {
@@ -315,6 +321,12 @@
     color: #FFFFFF;
   }
 
+
+#slider {
+  transition: opacity 0.6s ease;
+  opacity: 1;
+}
+
 </style>
 
 </head>
@@ -341,20 +353,57 @@
     </a>
 
   <div class="c1">
-    <img src="https://github.com/Bob-13/oficial-website/blob/main/img/ChatGPT%20Image%20Jan%2030,%202026,%2001_36_32%20PM.png?raw=true" alt="Здесь должна была быть картинка, но она не загрузилась...">
+    <img id="slider" src="https://github.com/Bob-13/oficial-website/blob/main/img/ChatGPT%20Image%20Jan%2030,%202026,%2001_36_32%20PM.png?raw=true" alt="Здесь должна была быть картинка, но она не загрузилась...">
   </div>
 
-<details class="d1">
-  <summary>
-    <div></div>
-  </summary>
-  <ul Class="d2">
-    <li><a href="https://bob-13.github.io/oficial-website/page1.html">Fantasy stories</a></li>
-    <li><a href="https://bob-13.github.io/oficial-website/page1.html">Old tales</a></li>
-    <li><a href="https://bob-13.github.io/oficial-website/page1.html">Random nonsense</a></li>
-  </ul>
-</details>
+  <details class="d1">
+    <summary>
+      <div></div>
+    </summary>
+    <ul Class="d2">
+      <li><a href="https://bob-13.github.io/oficial-website/page1.html">Fantasy stories</a></li>
+      <li><a href="https://bob-13.github.io/oficial-website/page1.html">Old tales</a></li>
+      <li><a href="https://bob-13.github.io/oficial-website/page1.html">Random nonsense</a></li>
+    </ul>
+  </details>
 
   <p  class="c3">Это тест моего сайта.</p>
+
+
+<script>
+  const e1 = [
+    "https://github.com/Bob-13/oficial-website/blob/main/img/ChatGPT%20Image%20Jan%2030,%202026,%2001_36_32%20PM.png?raw=true",
+    "https://github.com/Bob-13/oficial-website/blob/main/img/ChatGPT%20Image%20Feb%204,%202026,%2010_51_53%20PM.png?raw=true",
+    "https://github.com/Bob-13/oficial-website/blob/main/img/ChatGPT%20Image%20Feb%206,%202026,%2008_29_03%20PM.png?raw=true"
+  ];
+
+let e2 = 0;
+const e3 = document.getElementById("slider");
+
+function showImage() {
+  e3.style.opacity = 0;
+
+  setTimeout(() => {
+    e3.src = e1[e2];
+    e3.style.opacity = 1;
+  }, 600);
+}
+
+function next() {
+  e2 = (e2 + 1) % e1.length;
+  showImage();
+}
+
+function prev() {
+  e2 = (e2 - 1 + e1.length) % e1.length;
+  showImage();
+}
+
+setInterval(() => {
+  e2 = (e2 + 1) % e1.length;
+  showImage();
+}, 5000);
+</script>
+
 </body>
 </html>
